@@ -1,5 +1,5 @@
-#include <stack3.hpp>
 #include <catch.hpp>
+#include <stack3.hpp>
 
 SCENARIO("stack init", "[init]") {
 	stack<int> st;
