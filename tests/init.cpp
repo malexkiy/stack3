@@ -32,6 +32,18 @@ SCENARIO("stack op=", "[op=]") {
 	REQUIRE(st2.count() == 3);
 }
 
+SCENARIO("stack empty", "[empty]") {
+	stack<int> st;
+	
+	REQUIRE(st.empty() == true);
+
+	st.push(1);
+	st.push(2);
+	st.push(3);
+
+	REQUIRE(st.empty() == false);
+}
+
 SCENARIO("stack push", "[push]") {
 	stack<int> st;
 	REQUIRE(st.count() == 0);
